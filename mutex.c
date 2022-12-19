@@ -12,7 +12,7 @@ void *even_odd()
 {
 	//locking the mutex
 	pthread_mutex_lock(&mutex);
-
+	// using loop find odd-even
 	for (; min<= max;)
 	{
 		if(min % 2 == 0)
@@ -24,9 +24,7 @@ void *even_odd()
 
 			printf("odd=%d\n",min);
 		}
-//		pthread_mutex_lock(&mutex);
 		min++;
-//		pthread_mutex_unlock(&mutex);
 	
 	}
 	//unlocking the mutex when complete
