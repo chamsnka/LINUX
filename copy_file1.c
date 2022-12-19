@@ -4,12 +4,13 @@
 #include<stdlib.h>
  int main(int argc,char *argv[])
 {
+	//declare a variable 
 	int fd1,fd2;
 	char buffer[1024];
 	int ch;
 	//opening a for readonly:
 	fd1=open(argv[1],O_RDONLY);
-
+	
         if(fd1<0)
         {
                 perror("open fails\n");
