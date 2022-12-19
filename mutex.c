@@ -52,7 +52,7 @@ int main()
 	{
 		return 2;
 	}
-	// joining the thread
+	// join the thread t1 and t2 
 	if (pthread_join(t1, NULL) != 0) 
 	{
 		return 5;
